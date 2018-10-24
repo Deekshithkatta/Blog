@@ -1,0 +1,132 @@
+html{
+	height: 100%;
+	overflow: hidden;
+}
+
+
+
+body{
+	color: #fff;
+	 margin: 0;
+    padding: 0;
+    perspective:1px;
+    transform-style:preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Luna";
+
+}
+
+header{
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding: 30vw 0 5vw;
+	position: relative;
+	transform-style:inherit;
+	width: 100vw;
+}
+header h1{
+	margin-top: -100px;
+}
+header,header:before{
+	background: 50% 50% /cover;
+
+}
+header::before{
+	bottom: :0;
+	content: "";
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: block;
+	background-image: url(blogg.jpg);
+	background-size: cover;
+	transform-origin:center center 0;
+	transform:translatez(-1px)scale(2);
+	z-index: -1;
+	min-height: 100vh;
+}
+header *{
+	font-weight: normal;
+	letter-spacing: 0.2em;
+	text-align: center;
+	margin: 0;
+	padding: 1em 0;
+
+}
+.nav{
+	color: black;
+	text-decoration: none;
+	width: 20%;
+	height: 50%;
+}
+a{
+	color:black;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: 20px;
+}
+.list{
+	color: white;
+}
+.btn{
+	background-color:#c1beb9;
+	color: white;
+	padding-left:94%; 
+	padding-right:94%;
+	padding-bottom:30%;
+	padding-top:30%;
+	border:none;
+	cursor: pointer;
+	width: 2700%;
+}
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+}
+.dropdown-content{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	 box-shadow: 0px 8px 16px 0px black;
+	 width: 2700%;
+}
+
+.dropdown-content a{
+	color: black;
+	padding: 16px 12px;
+	text-decoration: none;
+	display: block;
+
+}
+.dropdown-cotent a:hover{
+	background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content{
+display: block;
+}
+
+.dropdown:hover .btn{
+	background-color: #025dfb;
+}
+
+@media(max-width: 380px){
+	.btn{
+
+	background-color:black;
+	color: white;
+	padding-left:94%; 
+	padding-right:94%;
+	padding-bottom:30%;
+	padding-top:30%;
+	border:none;
+	cursor: pointer;
+	width: 2700%;
+}
+}
